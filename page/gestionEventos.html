@@ -1,85 +1,788 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
-    <link rel="stylesheet" href="/css\styles.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    />
+    <link rel="stylesheet" href="/css\styles.css" />
+  </head>
 
-<body>
+  <body>
+    
+    <nav class="navbar is-black has-background-black">
+      <div class="navbar-brand">
+        <h1 class="navbar-item is-size-2-desktop has-text-white">CultuVivo</h1>
 
-    <nav class="navbar is-black has-background-black ">
-        <div class="navbar-brand">
+        <a class="navbar-burger has-text-white" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
+      </div>
 
-
-            <h1 class="navbar-item is-size-2-desktop  has-text-white">CultuVivo</h1>
-
-            <a class="navbar-burger has-text-white" id="burger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </a>
+      <div class="navbar-menu" id="nav-links">
+        <div class="navbar-end">
+          <a class="navbar-item" href="../index.html"> Inicio</a>
         </div>
-
-        <div class="navbar-menu" id="nav-links">
-            <div class="navbar-end">
-                <a class="navbar-item" href="../index.html"> Inicio</a>
-
-
-
-
-            </div>
-        </div>
+      </div>
     </nav>
 
-
-
-    <table class="table is-bordered  is-flex is-align-items-center is-justify-content-center">
-        <tbody>
+    <section class="section">
+      <div class="container">
+        <a class="button is-danger mb-4 detalle-button" data-detalle="7">
+          Crear
+        </a>
+        <table class="table mt-1 is-fullwidth">
+          <tbody>
             <tr>
-                <th class="">Evento</th>
-                <th class="">Acción</th>
+              <th class="has-text-centered">Evento</th>
+              <th class="has-text-centered">Fecha</th>
+              <th class="has-text-centered">Estado</th>
+              <th class="has-text-centered">Acción</th>
             </tr>
             <tr class="">
-                <td> Alcolirykos
-                </td>
-                <td>
-                    <a class="card-footer-item has-text-grey detalle-button" data-detalle="1">Modificar</a>
-                </td>
+              <td>Alcolirykos</td>
+              <td>6/01/2025</td>
+              <td>Pendiente</td>
+              <td class="is-flex is-justify-content-center">
+                <a
+                  class="button is-primary is-light detalle-button"
+                  data-detalle="1"
+                  >Modificar</a
+                >
+              </td>
+            </tr>
+            <tr class="">
+              <td>Alcolirykos</td>
+              <td>10/03/2025</td>
+              <td>Pendiente</td>
+              <td class="is-flex is-justify-content-center">
+                <a
+                  class="button is-primary is-light detalle-button"
+                  data-detalle="2"
+                  >Modificar</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>La Etnnia</td>
+              <td>1/11/2024</td>
+              <td>Realizado</td>
+              <td class="is-flex is-justify-content-center">
+                <a
+                  class="button is-primary is-light detalle-button"
+                  data-detalle="3"
+                  >Modificar</a
+                >
+              </td>
+            </tr>
+
+            <tr>
+              <td>La Etnnia</td>
+              <td>5/12/2024</td>
+              <td>Pendiente</td>
+              <td class="is-flex is-justify-content-center">
+                <a
+                  class="button is-primary is-light detalle-button"
+                  data-detalle="4"
+                  >Modificar</a
+                >
+              </td>
             </tr>
             <tr>
-                <td>La Etnnia</td>
-                <td>
-                    <a
-                    class="card-footer-item has-text-grey detalle-button"
-                    data-detalle="1"
-                    >Modificar</a
-                  >
-                </td>
+              <td>Andres Cepeda</td>
+              <td>28/12/2024</td>
+              <td>Pendiente</td>
+              <td class="is-flex is-justify-content-center">
+                <a
+                  class="button is-primary is-light detalle-button"
+                  data-detalle="5"
+                  >Modificar</a
+                >
+              </td>
             </tr>
             <tr>
-                
-                <td>Andres Cepeda</td>
-                <td>
-                    <a
-                    class="card-footer-item has-text-grey detalle-button"
-                    data-detalle="1"
-                    >Modificar</a
-                  >
-                </td>
+              <td>Andres Cepeda</td>
+              <td>5/12/2024</td>
+              <td>Pendiente</td>
+              <td class="is-flex is-justify-content-center">
+                <a
+                  class="button is-primary is-light detalle-button"
+                  data-detalle="6"
+                  >Modificar</a
+                >
+              </td>
             </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
+    <!-- Modales -->
+    <div class="modal modal1">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white py-5 px-5">
+        <form action="" method="get">
+          <div class="field">
+            <label class="label" for="nombre">Nombre del artista</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Nombre"
+                value="Alcolirykos"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="nombre"
+              />
+            </div>
+          </div>
 
+          <div class="field">
+            <label class="label" for="duracion">Duracion</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Duracion"
+                value="1 hora"
+                required
+                minlength="5"
+                maxlength="20"
+                size="50"
+                id="duracion"
+              />
+            </div>
+          </div>
 
-        </tbody>
-    </table>
+          <div class="field">
+            <label class="label" for="lugar">Lugar</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Lugar"
+                value="Movistar Arena"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="lugar"
+              />
+            </div>
+          </div>
 
+          <div class="field">
+            <label class="label" for="fecha">Fecha</label>
+            <div class="control">
+              <input
+                class="date"
+                type="date"
+                placeholder="fecha"
+                value="2025-01-06"
+                required
+                id="fecha"
+              />
+            </div>
+          </div>
 
+          <div class="field">
+            <label class="label" for="tel">Estado:</label>
+            <div class="control">
+              <select name="">
+                <option value="" selected>Pendiente</option>
+                <option value="">Realizado</option>
+                <option value="">Cancelado</option>
+              </select>
+            </div>
+          </div>
 
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button">Modificar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
 
-</body>
+    <div class="modal modal2">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white py-5 px-5">
+        <form action="" method="get">
+          <div class="field">
+            <label class="label" for="nombre">Nombre del artista</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Nombre"
+                value="Alcolirykos"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="nombre"
+              />
+            </div>
+          </div>
 
+          <div class="field">
+            <label class="label" for="duracion">Duracion</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Duracion"
+                value="1 hora y 30 minutos"
+                required
+                minlength="5"
+                maxlength="20"
+                size="50"
+                id="duracion"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="lugar">Lugar</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Lugar"
+                value="Movistar Arena España"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="lugar"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="fecha">Fecha</label>
+            <div class="control">
+              <input
+                class="date"
+                type="date"
+                placeholder="fecha"
+                value="2025-01-06"
+                required
+                id="fecha"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="tel">Estado:</label>
+            <div class="control">
+              <select name="">
+                <option value="" selected>Pendiente</option>
+                <option value="">Realizado</option>
+                <option value="">Cancelado</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button">Modificar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal modal3">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white py-5 px-5">
+        <form action="" method="get">
+          <div class="field">
+            <label class="label" for="nombre">Nombre del artista</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Nombre"
+                value="La Etnnia"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="nombre"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="duracion">Duracion</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Duracion"
+                value="1 hora"
+                required
+                minlength="5"
+                maxlength="20"
+                size="50"
+                id="duracion"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="lugar">Lugar</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Lugar"
+                value="Teatro Santander"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="lugar"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="fecha">Fecha</label>
+            <div class="control">
+              <input
+                class="date"
+                type="date"
+                placeholder="fecha"
+                value="2024-11-01"
+                required
+                id="fecha"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="tel">Estado:</label>
+            <div class="control">
+              <select name="">
+                <option value="">Pendiente</option>
+                <option value="" selected>Realizado</option>
+                <option value="">Cancelado</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button">Modificar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal modal4">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white py-5 px-5">
+        <form action="" method="get">
+          <div class="field">
+            <label class="label" for="nombre">Nombre del artista</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Nombre"
+                value="La Etnnia"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="nombre"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="duracion">Duracion</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Duracion"
+                value="1 hora"
+                required
+                minlength="5"
+                maxlength="20"
+                size="50"
+                id="duracion"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="lugar">Lugar</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Lugar"
+                value="El caqueta"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="lugar"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="fecha">Fecha</label>
+            <div class="control">
+              <input
+                class="date"
+                type="date"
+                placeholder="fecha"
+                value="2024-12-05"
+                required
+                id="fecha"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="tel">Estado:</label>
+            <div class="control">
+              <select name="">
+                <option value="" selected>Pendiente</option>
+                <option value="">Realizado</option>
+                <option value="">Cancelado</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button">Modificar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal modal5">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white py-5 px-5">
+        <form action="" method="get">
+          <div class="field">
+            <label class="label" for="nombre">Nombre del artista</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Nombre"
+                value="Andres Cepeda"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="nombre"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="duracion">Duracion</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Duracion"
+                value="1 hora y 30 minutos"
+                required
+                minlength="5"
+                maxlength="20"
+                size="50"
+                id="duracion"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="lugar">Lugar</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Lugar"
+                value="Plaza de toros"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="lugar"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="fecha">Fecha</label>
+            <div class="control">
+              <input
+                class="date"
+                type="date"
+                placeholder="fecha"
+                value="2024-12-28"
+                required
+                id="fecha"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="tel">Estado:</label>
+            <div class="control">
+              <select name="">
+                <option value="" selected>Pendiente</option>
+                <option value="">Realizado</option>
+                <option value="">Cancelado</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button">Modificar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal modal6">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white py-5 px-5">
+        <form action="" method="get">
+          <div class="field">
+            <label class="label" for="nombre">Nombre del artista</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Nombre"
+                value="Andres Cepeda"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="nombre"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="duracion">Duracion</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Duracion"
+                value="1 hora"
+                required
+                minlength="5"
+                maxlength="20"
+                size="50"
+                id="duracion"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="lugar">Lugar</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Lugar"
+                value="Toronto EE:UU"
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="lugar"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="fecha">Fecha</label>
+            <div class="control">
+              <input
+                class="date"
+                type="date"
+                placeholder="fecha"
+                value="2024-12-05"
+                required
+                id="fecha"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="tel">Estado:</label>
+            <div class="control">
+              <select name="">
+                <option value="" selected>Pendiente</option>
+                <option value="">Realizado</option>
+                <option value="">Cancelado</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button">Modificar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div class="modal modal7">
+      <div class="modal-background"></div>
+      <div class="modal-content has-background-white py-5 px-5">
+        <form action="" method="get">
+          <div class="field">
+            <label class="label" for="nombre">Nombre del artista</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Nombre"
+                value=""
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="nombre"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="duracion">Duracion</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Duracion (Ej: 1 hora y 30 minutos)"
+                value=""
+                required
+                minlength="5"
+                maxlength="20"
+                size="50"
+                id="duracion"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="lugar">Lugar</label>
+            <div class="control">
+              <input
+                class="input"
+                type="text"
+                placeholder="Lugar"
+                value=""
+                required
+                minlength="4"
+                maxlength="20"
+                size="50"
+                id="lugar"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="fecha">Fecha</label>
+            <div class="control">
+              <input
+                class="date"
+                type="date"
+                placeholder="fecha"
+                value=""
+                required
+                id="fecha"
+              />
+            </div>
+          </div>
+
+          <div class="field">
+            <label class="label" for="tel">Estado:</label>
+            <div class="control">
+              <select name="">
+                <option value="">Pendiente</option>
+                <option value="">Realizado</option>
+                <option value="">Cancelado</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field is-grouped is-justify-content-center">
+            <div class="control">
+              <button class="button">Modificar</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <footer
+      class="footer has-text-black p-0 e-footer"
+    >
+      <div class="content has-text-centered">
+        <h4>Tu Evento, Nuestra Inspiración</h4>
+        <p class="is-size-5">
+          <strong class="anime">Cultivivo</strong> © 2024. Todos los derechos
+          reservados.
+        </p>
+        <div class="social-icons">
+          <a
+            href="https://facebook.com"
+            class="icon is-large has-text-black"
+            style="margin: 0 10px"
+            aria-label="Facebook"
+          >
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a
+            href="https://twitter.com"
+            class="icon is-large has-text-black"
+            style="margin: 0 10px"
+            aria-label="Twitter"
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a
+            href="https://instagram.com"
+            class="icon is-large has-text-black"
+            style="margin: 0 10px"
+            aria-label="Instagram"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="../js/gestionEventos.js"></script>
+  </body>
 </html>
