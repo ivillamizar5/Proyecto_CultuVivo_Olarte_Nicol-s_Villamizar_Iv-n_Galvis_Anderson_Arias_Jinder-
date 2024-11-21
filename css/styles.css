@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 #datos{
     position: relative;
-    top: 12vw;
+    top: 9vh;
 }
 body{
     background-image: url(/imagenes/indexfondo.jpg);
