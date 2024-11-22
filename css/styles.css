@@ -27,3 +27,11 @@ body{
     text-align: center; 
     background-color: transparent;
 }
+.principal{
+    background-image: url(/imagenes/ai-generated-8581405_1280.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}

@@ -8,37 +8,87 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 </head><link rel="stylesheet" href="/css/styles.css" type="text/css">
 <body>
-    <div class="container ">
-        <div class="columns">
-          <div class="column is-flex is-justify-content-center has-text-black is-align-items-center ">
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link "> ASISTENTES</a>
-              <div class="navbar-dropdown ">
-                <a class="navbar-item" href="./page/Eventos.html">EVENTOS</a>
-                <a class="navbar-item" href="/page/registro_asistentes.html">RESGISTRO ASISTENTES</a>
-              </div>
-            </div>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link"> ARTISTAS</a>
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="/page/Artistas.html">PRESENTACIONES ARTISTAS </a>
-                <a class="navbar-item" href="">LISTAS EVENTOS </a>
-              </div>
-            </div>
-            <div class="navbar-item has-dropdown is-hoverable">
-              <a class="navbar-link"> ADMINISTRADOR</a>
-              <div class="navbar-dropdown">
-                <a class="navbar-item" href="">PRESENTACIONES ARTISTAS </a>
-                <a class="navbar-item" href="">LISTAS EVENTOS </a>
-        </div>
-    </div>
+  <div class="principal">
+    <nav class="navbar is-black has-background-black">
+      <div class="navbar-brand">
+        <h1 class="navbar-item is-size-2-desktop has-text-white">CultuVivo</h1>
 
-      <div class="image-container  columns is-vcentered is-centered" style="height: 100vh;">
-              <!-- La columna que contiene la imagen -->
-            <div class="" style="max-width: 70%; height: 50%;">
-                  <img src="/imagenes/teatro-index.jpg" alt="Imagen centrada" class="is-circle">
-            </div>
+        <a class="navbar-burger has-text-white" id="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
       </div>
+
+      <div class="navbar-menu" id="nav-links">
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link "> ASISTENTES</a>
+        <div class="navbar-dropdown ">
+          <a class="navbar-item" href="./page/Eventos.html">EVENTOS</a>
+          <a class="navbar-item" href="/page/registro_asistentes.html">RESGISTRO ASISTENTES</a>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> ARTISTAS</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="/page/Artistas.html">PRESENTACIONES ARTISTAS </a>
+          <a class="navbar-item" href="">LISTAS EVENTOS </a>
+        </div>
+      </div>
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link"> ADMINISTRADOR</a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="">PRESENTACIONES ARTISTAS </a>
+          <a class="navbar-item" href="">LISTAS EVENTOS </a>
+  </div>
+    </nav>
+    
+  
+        <div class="image-container  columns is-vcentered is-centered" style="height: 100vh;">
+                <!-- La columna que contiene la imagen -->
+              <div class="" style="max-width: 70%; height: 50%;">
+                    <img src="/imagenes/ai-generated-8581405_1280.webp" alt="Imagen centrada" class="is-circle">
+              </div>
+        </div>
+  </div>
+  <footer
+  class="footer has-text-black p-0 e-footer"
+>
+  <div class="content has-text-centered">
+    <h4>Tu Evento, Nuestra Inspiración</h4>
+    <p class="is-size-5 has-text-white">
+      <strong class="anime">Cultivivo</strong> © 2024. Todos los derechos
+      reservados.
+    </p>
+    <div class="social-icons">
+      <a
+        href="https://facebook.com"
+        class="icon is-large has-text-black"
+        style="margin: 0 10px"
+        aria-label="Facebook"
+      >
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a
+        href="https://twitter.com"
+        class="icon is-large has-text-black"
+        style="margin: 0 10px"
+        aria-label="Twitter"
+      >
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a
+        href="https://instagram.com"
+        class="icon is-large has-text-black"
+        style="margin: 0 10px"
+        aria-label="Instagram"
+      >
+        <i class="fab fa-instagram"></i>
+      </a>
+    </div>
+  </div>
+</footer>
             
 </body>
 </html>
