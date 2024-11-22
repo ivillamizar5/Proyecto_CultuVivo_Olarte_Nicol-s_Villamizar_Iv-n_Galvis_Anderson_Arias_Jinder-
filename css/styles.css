@@ -5,7 +5,7 @@ box-sizing: border-box;
 }
 #datos{
     position: relative;
-    top: 12vw;
+    top: 9vh;
 }
 body{
     background-image: url(/imagenes/indexfondo.jpg);
@@ -17,3 +17,21 @@ body{
    .asis{
     font-size: large;
    }
+
+.e-footer{
+    position: absolute;
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    margin: auto;
+    text-align: center; 
+    background-color: transparent;
+}
+.principal{
+    background-image: url(/imagenes/ai-generated-8581405_1280.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
